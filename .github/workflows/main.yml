@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'Moonraker18'
+        description: 'Agent Name'
         required: true
         default: 'Moonraker18'
       agent_description:
-        description: 'Moonraker18'
+        description: 'Agent Description'
         required: true
         default: 'Moonraker18 AI Agent'
 
@@ -18,10 +18,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
